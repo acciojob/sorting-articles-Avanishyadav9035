@@ -1,4 +1,5 @@
 //your JS code here. If required.
+document.addEventListener("DOMContentLoaded", function () {
 const bands = [
     'The Plot in You', 'The Devil Wears Prada', 'Pierce the Veil',
     'Norma Jean', 'The Bled', 'Say Anything', 'The Midway State',
@@ -17,3 +18,4 @@ const sortedBands = bands.sort((a, b) => stripArticle(a).localeCompare(stripArti
 // Display sorted bands in the list
 const bandList = document.getElementById('band');
 bandList.innerHTML = sortedBands.map(band => `<li>${band}</li>`).join('');
+}
